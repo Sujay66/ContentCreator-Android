@@ -1,0 +1,48 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.raveltrips.contentcreator.Fragments.HiddenGemsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/mapView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.00"
+            />
+
+ <!--       <android.support.v7.widget.Toolbar
+            android:gravity="top|start"
+            android:id="@+id/hiddengemstoolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.05"/>-->
+        <LinearLayout android:id="@+id/footer" android:layout_width="fill_parent"
+            android:background="#FF5350"
+            android:layout_height="wrap_content" android:orientation="horizontal"
+            android:layout_alignParentBottom="true" style="@android:style/ButtonBar">
+
+            <Button android:id="@+id/updateButton" android:layout_width="wrap_content"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/buttonbc"
+                android:layout_height="wrap_content" android:layout_weight="1"
+                android:text="SAVE" />
+
+            <Button android:id="@+id/cancelButton" android:layout_width="wrap_content"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/buttonbc"
+                android:layout_height="wrap_content" android:layout_weight="1"
+                android:text="CANCEL" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+</FrameLayout>

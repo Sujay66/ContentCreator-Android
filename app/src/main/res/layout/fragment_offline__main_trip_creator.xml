@@ -1,0 +1,72 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.raveltrips.contentcreator.Fragments.OfflineFragments.Offline_MainTripCreatorFragment">
+
+        <!-- TODO: Update blank fragment layout -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/topicon"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_alignBottom="@+id/save"
+                android:layout_marginStart="19dp"
+                android:layout_marginTop="5dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/navbardropdown" />
+
+            <TextView
+                android:id="@+id/save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="22dp"
+                android:text="Save &amp; Close"
+                android:textColor="#FF5350" />
+
+            <TextView
+                android:id="@+id/offlinetripname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/save"
+                android:layout_alignBottom="@+id/save"
+                android:layout_centerHorizontal="true"
+                android:layout_toEndOf="@+id/tripcontent"
+                android:gravity="center"
+                android:textColor="#3B474F"
+                android:textStyle="bold"
+                android:text="Trip Name.."
+                android:textSize="20dp" />
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="3dp"
+                app:cardElevation="8dp"
+                app:cardUseCompatPadding="true"
+                android:layout_below="@+id/tripname"
+                android:layout_marginTop="91dp"
+                android:layout_alignStart="@+id/topicon"
+                android:layout_alignEnd="@+id/save">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </android.support.v7.widget.RecyclerView>
+            </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+
+    </FrameLayout>

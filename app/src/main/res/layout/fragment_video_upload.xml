@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.raveltrips.contentcreator.Fragments.VideoUploadFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="@string/upload"
+            android:textSize="16sp"
+            android:textColor="#3B474F"
+            android:id="@+id/upload"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/urlcontainer" />
+
+        <TextView
+            android:id="@+id/urlcontainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="17dp"
+            android:text="URL"
+            android:textSize="15sp"
+            android:textColor="#A8A8A8"
+            android:layout_below="@+id/upload"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:id="@+id/urltext"
+            android:layout_width="330dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="17dp"
+            android:textColor="#3B474E"
+            android:textSize="15sp"
+            android:background="@drawable/border_box_gray"
+            android:layout_below="@+id/urlcontainer"
+            android:layout_alignStart="@+id/urlcontainer"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:id="@+id/video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:textColor="#3B474F"
+            android:textSize="12sp"
+            android:text="@string/video_upload"
+            android:layout_below="@+id/urltext"
+            android:layout_alignEnd="@+id/urltext"
+            android:layout_alignStart="@+id/urltext" />
+
+
+    </RelativeLayout>
+    <Button
+        android:id="@+id/videosave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/mybutton"
+        android:textColor="#ffffff"
+        android:text="Submit" />
+</RelativeLayout>

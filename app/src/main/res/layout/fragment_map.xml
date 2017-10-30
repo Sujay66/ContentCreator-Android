@@ -1,0 +1,247 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="?attr/actionBarSize"
+
+    tools:context="com.raveltrips.contentcreator.Fragments.MapActivitiesFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="480dp"
+    android:fillViewport="true"
+    android:scrollbars="vertical"
+    android:nestedScrollingEnabled="true"
+    android:overScrollMode="always"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentStart="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        >
+
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="21dp"
+            android:layout_height="27dp"
+            android:layout_above="@+id/phonenumber"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/phonenumbericon" />
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="21dp"
+            android:layout_height="27dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/cameraicon" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="13dp"
+            android:text="Name"
+            android:textColor="#6B818F"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/namefield"
+            android:layout_width="330dp"
+            android:layout_height="25dp"
+            android:layout_alignStart="@+id/textView"
+            android:layout_below="@+id/textView"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/border_box_gray"
+            android:paddingLeft="8dp"
+            android:textColor="#3B474F"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:layout_width="21dp"
+            android:layout_height="27dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_below="@+id/namefield"
+            android:layout_marginTop="75dp"
+            android:src="@drawable/websiteicon" />
+
+        <TextView
+            android:id="@+id/longitudetext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/namefield"
+            android:layout_below="@+id/namefield"
+            android:layout_marginTop="12dp"
+            android:text="Website"
+            android:textColor="#6B818F"
+
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/websitetext"
+            android:layout_width="330dp"
+            android:layout_height="25dp"
+            android:layout_alignStart="@+id/longitudetext"
+            android:layout_below="@+id/longitudetext"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/border_box_gray"
+            android:paddingLeft="8dp"
+            android:textColor="#3B474F"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/descimage"
+            android:layout_width="21dp"
+            android:layout_height="27dp"
+            android:src="@drawable/editdescriptionicon"
+            android:layout_marginTop="109dp"
+            android:layout_below="@+id/viewphotos"
+            android:layout_alignParentStart="true" />
+
+
+        <TextView
+            android:id="@+id/numberfield"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/phonenumber"
+
+            android:layout_alignStart="@+id/tagstext"
+            android:layout_marginBottom="10dp"
+            android:text="Phone Number"
+            android:textColor="#6B818F"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/phonenumber"
+            android:layout_width="330dp"
+            android:layout_height="25dp"
+            android:background="@drawable/border_box_gray"
+            android:paddingLeft="8dp"
+            android:textColor="#3B474F"
+            android:textSize="12sp"
+            android:layout_above="@+id/textView2"
+            android:layout_alignStart="@+id/textView2" />
+
+        <ImageView
+            android:id="@+id/photo"
+            android:layout_width="21dp"
+            android:layout_height="27dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/websitetext"
+            android:layout_marginTop="18dp"
+            android:src="@drawable/cameraicon" />
+
+        <TextView
+            android:id="@+id/photostext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/websitetext"
+            android:layout_alignTop="@+id/photo"
+            android:layout_marginTop="5dp"
+            android:text="Photos"
+            android:textColor="#6B818F"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/galleryaddicon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignStart="@+id/photostext"
+            android:layout_below="@+id/photo"
+            android:layout_toEndOf="@+id/textView"
+            app:srcCompat="@drawable/gallery" />
+
+        <ImageView
+            android:id="@+id/cameraaddicon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+
+            android:layout_alignTop="@+id/galleryaddicon"
+            android:layout_toEndOf="@+id/textView2"
+            app:srcCompat="@drawable/artboard" />
+        <Button
+            android:layout_marginTop="15dp"
+            android:id="@+id/viewphotos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/mybutton"
+            android:visibility="invisible"
+            android:padding="10dp"
+            android:layout_below="@+id/cameraaddicon"
+            android:text="View Photos"
+            android:textColor="#ffffff" />
+
+        <ImageView
+            android:id="@+id/tagsicon"
+            android:layout_width="21dp"
+            android:layout_height="27dp"
+            app:srcCompat="@drawable/tagsicon"
+            android:layout_above="@+id/tagstext"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/tagsfield"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tags"
+            android:textColor="#6B818F"
+            android:textSize="12sp"
+            android:layout_alignTop="@+id/tagsicon"
+            android:layout_alignStart="@+id/galleryaddicon" />
+
+        <EditText
+            android:id="@+id/tagstext"
+            android:layout_width="330dp"
+            android:layout_height="25dp"
+
+            android:background="@drawable/border_box_gray"
+            android:paddingLeft="8dp"
+            android:textColor="#3B474F"
+            android:textSize="12sp"
+            android:layout_marginBottom="10dp"
+            android:layout_above="@+id/imageView4"
+            android:layout_alignStart="@+id/tagsfield" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/numberfield"
+            android:layout_alignTop="@+id/descimage"
+            android:layout_marginTop="4dp"
+            android:text="Description"
+            android:textColor="#6B818F"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/descriptiontext"
+            android:layout_width="330dp"
+            android:layout_height="100dp"
+            android:background="@drawable/border_box_gray"
+            android:focusableInTouchMode="true"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:paddingLeft="8dp"
+            android:textColor="#3B474F"
+            android:textSize="12sp"
+            android:layout_below="@+id/descimage"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="17dp"
+            android:layout_alignStart="@+id/textView2" />
+
+    </RelativeLayout>
+</ScrollView>
+
+</RelativeLayout>

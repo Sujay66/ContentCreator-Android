@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.raveltrips.contentcreator"
+    android:stopWithTask="true">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- permission for location services... -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="com.androidtutorialpoint.mymapsappsdirection.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="false" />
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <service
+            android:name="com.raveltrips.contentcreator.Service.ConnectionService"
+            android:enabled="true"
+            android:stopWithTask="true"/>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyD00p8zrfhHARywMZbEpoPn-RsahR6dZxI" />
+
+        <activity
+            android:name="com.raveltrips.contentcreator.LoginActivity"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.raveltrips.contentcreator.MainActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.raveltrips.contentcreator.WelcomeActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.raveltrips.contentcreator.TripCreatorActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name="com.raveltrips.contentcreator.MyTrips" />
+        <activity
+            android:name="com.raveltrips.contentcreator.HiddenGemsActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:windowSoftInputMode="adjustResize"
+            android:name="com.raveltrips.contentcreator.ProfileNewActivity"
+            />
+        <activity
+            android:name="com.raveltrips.contentcreator.PaidActivitiesActivity"
+            android:theme="@style/Theme2"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.raveltrips.contentcreator.RestaurantsActivity"
+            android:theme="@style/Theme2"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyD00p8zrfhHARywMZbEpoPn-RsahR6dZxI" />
+
+        <activity
+            android:name="com.raveltrips.contentcreator.OfflinePageActivity"
+            android:theme="@style/Theme2"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name="com.raveltrips.contentcreator.OfflineUploadActivity">
+        <intent-filter>
+            <action android:name="android.intent.action.OFFLINE" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+            </activity>
+
+    </application>
+
+</manifest>

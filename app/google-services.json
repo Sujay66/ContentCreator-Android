@@ -1,0 +1,70 @@
+{
+  "project_info": {
+    "project_number": "669434285164",
+    "firebase_url": "https://raveltrips-97a6d.firebaseio.com",
+    "project_id": "raveltrips-97a6d",
+    "storage_bucket": "raveltrips-97a6d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:669434285164:android:cb5b2d91bb6408ef",
+        "android_client_info": {
+          "package_name": "com.raveltrips.summerravel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "669434285164-0tdt0sd3ukmfu2ndmqdioijki74t0dfl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.raveltrips.summerravel",
+            "certificate_hash": "c94e8fbb3926f7b6cc0f8ba684e5219cbe128d3c"
+          }
+        },
+        {
+          "client_id": "669434285164-si7mctplkutfpfri8rp700tmel4r7m1a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.raveltrips.summerravel",
+            "certificate_hash": "566f7d829566dfc09d3b8331e195acdecc83fad1"
+          }
+        },
+        {
+          "client_id": "669434285164-k0ls298buqpt0t3jjvvctf1ukkq5tchm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAyATL7vHApUl8wfzTtZGASyMa4z2iuGzk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "669434285164-l83s5tt9t72ps55jnf7n8vuek55p9cfu.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.raveltrips.RavelCC"
+              }
+            },
+            {
+              "client_id": "669434285164-k0ls298buqpt0t3jjvvctf1ukkq5tchm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

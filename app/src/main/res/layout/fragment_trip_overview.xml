@@ -1,0 +1,142 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.raveltrips.contentcreator.Fragments.TripOverviewFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/overview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/destination"
+            android:layout_marginTop="15dp"
+
+            android:textColor="#3B474F"
+            android:layout_marginBottom="10dp"
+            android:text="@string/overview"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/titlecontainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:textColor="#A8A8A8"
+            android:textSize="12sp"
+            android:layout_below="@+id/overview"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="50dp"
+            android:text="TITLE" />
+
+        <EditText
+            android:id="@+id/titletext"
+            android:layout_width="330dp"
+            android:layout_height="30dp"
+            android:textColor="#3B474F"
+            android:textSize="12sp"
+            android:paddingLeft="12dp"
+            android:layout_alignParentEnd="false"
+            android:layout_alignStart="@+id/titlecontainer"
+            android:layout_below="@+id/titlecontainer"
+            android:layout_marginTop="11dp"
+            android:background="@drawable/border_box_gray"
+            android:focusableInTouchMode="true" />
+
+        <TextView
+            android:id="@+id/destination"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#A8A8A8"
+            android:textSize="12sp"
+            android:layout_marginTop="24dp"
+            android:text="DESTINATION"
+            android:layout_below="@+id/titletext"
+            android:layout_alignStart="@+id/destinationtext" />
+
+        <EditText
+            android:id="@+id/destinationtext"
+            android:layout_width="330dp"
+            android:layout_height="30dp"
+            android:textColor="#3B474F"
+            android:textSize="12sp"
+            android:paddingLeft="12dp"
+            android:layout_alignStart="@+id/triplength"
+            android:layout_below="@+id/destination"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/border_box_gray"
+            android:focusableInTouchMode="true" />
+
+        <TextView
+            android:id="@+id/triplength"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="TRIP LENGTH"
+            android:textColor="#A8A8A8"
+            android:textSize="12sp"
+            android:layout_below="@+id/destinationtext"
+            android:layout_alignStart="@+id/titletext" />
+
+        <EditText
+            android:id="@+id/lengthtext"
+            android:layout_width="330dp"
+            android:layout_height="30dp"
+            android:textColor="#3B474F"
+            android:textSize="12sp"
+            android:paddingLeft="12dp"
+            android:layout_alignStart="@+id/triplength"
+            android:layout_below="@+id/triplength"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/border_box_gray"
+            android:focusableInTouchMode="true" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_alignStart="@+id/lengthtext"
+            android:layout_marginTop="15dp"
+            android:textColor="#A8A8A8"
+            android:layout_centerVertical="true"
+            android:text="DESCRIPTION" />
+
+        <EditText
+            android:id="@+id/descriptiontext"
+            android:layout_width="330dp"
+            android:layout_height="200dp"
+            android:textSize="12sp"
+            android:paddingLeft="12dp"
+            android:layout_alignStart="@+id/description"
+            android:layout_below="@+id/description"
+            android:layout_marginTop="12dp"
+            android:textColor="#3B474F"
+            android:background="@drawable/border_box_gray"
+            android:focusableInTouchMode="true"
+            android:gravity="top"
+            android:inputType="textMultiLine" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/overviewsave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/mybutton"
+        android:textColor="#ffffff"
+        android:text="Save" />
+
+</RelativeLayout>

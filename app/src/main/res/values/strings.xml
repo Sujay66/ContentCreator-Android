@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Ravel</string>
+    <string name="open_drawer">Open Drawer</string>
+    <string name="close_drawer">Close Drawer</string>
+    <string name="video_upload">* Remember to drop your video file onto this page from your desktop along with your editing file before you click submit</string>
+    <string name="upload">Video Upload</string>
+    <string name="overview">Trip Overview</string>
+    <string name="OfflineString">When offline...\n\nYou <b>cannot</b> create new trips\n\nYou <b>can</b> save gems, activities, and restuarants and add basic details\n\nAlso! Remember to take your photos outside the Ravle App to link them later\n\nWhen you have service again you will be prompted to update these trip contents back online</string>
+    <string name="refinegps">Please refine GPS location by zooming in on the map to confirm the dropped location is exactly where you were.\n\nUse the second pin to refine your dropped GPS location </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
